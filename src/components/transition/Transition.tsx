@@ -17,7 +17,7 @@ export const Transition = (): JSX.Element => {
                 initial="hidden"
                 animate="show"
                 exit="hide"
-                transition={{ duration: 4.5 }}
+                transition={{ duration: 2.5 }}
             />
         </React.Fragment>
     );

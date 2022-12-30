@@ -67,7 +67,7 @@ export const Products = ({
                                 className="product__card"
                                 variants={prodCardAni}>
                                     <img 
-                                        src={`../../../public/images/${
+                                        src={`../images/${
                                             perfume.image
                                         }`} 
                                         alt="" 

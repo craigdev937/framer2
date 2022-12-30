@@ -3,6 +3,7 @@ import "./Home.css";
 import { AnimatePresence } from "framer-motion";
 import { Products } from "../products/Products";
 import { Transition } from "../transition/Transition";
+import { Navbar } from "../navbar/Navbar";
 
 export const Home = (): JSX.Element => {
     const [transition, setTransition] = React.useState(false);
@@ -21,12 +22,13 @@ export const Home = (): JSX.Element => {
             ) : (
                 <div className="home__cover">
                     <aside className="home__overlay">
+                        <Navbar />
                         <div className="home__body">
                             <section className="top__text">
                                 <p>perfume network</p>
                             </section>
                             <section className="lower__text">
-                                <aside className="button"
+                                <aside className="lower__button"
                                     onClick={() => {
                                         setTransition(!transition);
                                         setTimeout(
@@ -35,7 +37,7 @@ export const Home = (): JSX.Element => {
                                         );
                                     }}
                                 >
-                                    <p>click</p>
+                                    <p className="lower__click">click</p>
                                 </aside>
                             </section>
                         </div>
